@@ -25,3 +25,20 @@ EPERM: operation not permitted, rename 'D:\FormaçãoVibeCoding\Projetos\Gerador
 [2026-03-12T19:51:07.523Z] [CI/CD MASTER] INICIANDO ESTEIRA DE DEPLOY AUTOMATIZADA
 [2026-03-12T19:51:07.524Z] [CI/CD MASTER] ETAPA 1/5: GIT PUSH
 [2026-03-12T19:51:07.525Z] [GIT-PUSH] Iniciando sincronização com Git...
+[2026-03-12T19:51:07.740Z] [GIT-PUSH] Commit realizado com sucesso.
+[2026-03-12T19:51:09.706Z] [GIT-PUSH] Push realizado com sucesso para o branch default.
+[2026-03-12T19:51:09.707Z] [CI/CD MASTER] ETAPA 2/5: BANCO DE DADOS E MIGRATE
+[2026-03-12T19:51:09.708Z] [MIGRATE] Iniciando migração do Prisma (PostgreSQL/MySQL)...
+[2026-03-12T19:51:16.111Z] [MIGRATE] Migração de banco concluida com sucesso!
+[2026-03-12T19:51:16.112Z] [CI/CD MASTER] ETAPA 3/5: SEED (Idempotente)
+[2026-03-12T19:51:16.113Z] [SEED] Iniciando processamento Idempotente do SEED das desculpas...
+[2026-03-12T19:51:16.421Z] [SEED] Usuário admin do sistema não encontrado. Criando base root...
+[2026-03-12T19:51:16.697Z] [SEED] Semente Admin plantada!
+[2026-03-12T19:51:16.698Z] [SEED] Seed do banco executada com sucesso.
+[2026-03-12T19:51:16.699Z] [CI/CD MASTER] ETAPA 4/5: COMPILAÇÃO NEXT E FTP DEPLOY
+[2026-03-12T19:51:16.700Z] [DEPLOY-FTP] Iniciando o Build de Produção do Next.js...
+[2026-03-12T19:51:23.818Z] [DEPLOY-FTP] FATAL ERROR DEPLOY FTP: Command failed: npm run build
+[2026-03-12T19:51:23.820Z] [CI/CD MASTER] ABORTANDO DEPLOY: Falha pesada na rede/FTP.
+[2026-03-12T19:55:02.299Z] [CI/CD MASTER] INICIANDO ESTEIRA DE DEPLOY AUTOMATIZADA
+[2026-03-12T19:55:02.299Z] [CI/CD MASTER] ETAPA 1/5: GIT PUSH
+[2026-03-12T19:55:02.300Z] [GIT-PUSH] Iniciando sincronização com Git...
