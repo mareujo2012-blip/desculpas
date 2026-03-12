@@ -1,3 +1,18 @@
 [2026-03-12T19:43:36.086Z] [CI/CD MASTER] INICIANDO ESTEIRA DE DEPLOY AUTOMATIZADA
 [2026-03-12T19:43:36.087Z] [CI/CD MASTER] ETAPA 1/5: GIT PUSH
 [2026-03-12T19:43:36.087Z] [GIT-PUSH] Iniciando sincronização com Git...
+[2026-03-12T19:43:36.383Z] [GIT-PUSH] Commit realizado com sucesso.
+[2026-03-12T19:43:38.389Z] [GIT-PUSH] Push realizado com sucesso para o branch default.
+[2026-03-12T19:43:38.389Z] [CI/CD MASTER] ETAPA 2/5: BANCO DE DADOS E MIGRATE
+[2026-03-12T19:43:38.390Z] [MIGRATE] Iniciando migração do Prisma (PostgreSQL/MySQL)...
+[2026-03-12T19:43:40.588Z] [MIGRATE] ERRO FATAL NA MIGRAÇÃO: Command failed: npx prisma generate
+Environment variables loaded from .env
+Error: 
+EPERM: operation not permitted, rename 'D:\FormaçãoVibeCoding\Projetos\GeradordeDesculpas\node_modules\.prisma\client\query_engine-windows.dll.node.tmp8600' -> 'D:\FormaçãoVibeCoding\Projetos\GeradordeDesculpas\node_modules\.prisma\client\query_engine-windows.dll.node'
+
+
+
+[2026-03-12T19:43:40.588Z] [CI/CD MASTER] ABORTANDO DEPLOY: Migrações de Banco de Dados falharam.
+[2026-03-12T19:45:02.691Z] [CI/CD MASTER] INICIANDO ESTEIRA DE DEPLOY AUTOMATIZADA
+[2026-03-12T19:45:02.692Z] [CI/CD MASTER] ETAPA 1/5: GIT PUSH
+[2026-03-12T19:45:02.693Z] [GIT-PUSH] Iniciando sincronização com Git...
