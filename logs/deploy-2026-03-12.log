@@ -16,3 +16,12 @@ EPERM: operation not permitted, rename 'D:\FormaçãoVibeCoding\Projetos\Gerador
 [2026-03-12T19:45:02.691Z] [CI/CD MASTER] INICIANDO ESTEIRA DE DEPLOY AUTOMATIZADA
 [2026-03-12T19:45:02.692Z] [CI/CD MASTER] ETAPA 1/5: GIT PUSH
 [2026-03-12T19:45:02.693Z] [GIT-PUSH] Iniciando sincronização com Git...
+[2026-03-12T19:45:02.892Z] [GIT-PUSH] Commit realizado com sucesso.
+[2026-03-12T19:45:04.779Z] [GIT-PUSH] Push realizado com sucesso para o branch default.
+[2026-03-12T19:45:04.780Z] [CI/CD MASTER] ETAPA 2/5: BANCO DE DADOS E MIGRATE
+[2026-03-12T19:45:04.781Z] [MIGRATE] Iniciando migração do Prisma (PostgreSQL/MySQL)...
+[2026-03-12T19:45:09.406Z] [MIGRATE] ERRO FATAL NA MIGRAÇÃO: Command failed: npx prisma db push --accept-data-loss
+[2026-03-12T19:45:09.407Z] [CI/CD MASTER] ABORTANDO DEPLOY: Migrações de Banco de Dados falharam.
+[2026-03-12T19:51:07.523Z] [CI/CD MASTER] INICIANDO ESTEIRA DE DEPLOY AUTOMATIZADA
+[2026-03-12T19:51:07.524Z] [CI/CD MASTER] ETAPA 1/5: GIT PUSH
+[2026-03-12T19:51:07.525Z] [GIT-PUSH] Iniciando sincronização com Git...
