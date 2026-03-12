@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "deploy": "tsx scripts/run-all.ts"
   },
   "dependencies": {
     "@prisma/client": "^6.19.2",
@@ -23,9 +24,12 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "basic-ftp": "^5.2.0",
+    "dotenv": "^17.3.1",
     "eslint": "^9",
     "eslint-config-next": "^15.1.7",
     "prisma": "^6.19.2",
+    "tsx": "^4.21.0",
     "typescript": "^5"
   }
 }
