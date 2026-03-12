@@ -1,0 +1,210 @@
+.tableWrapper {
+  overflow-x: auto;
+  padding: 0;
+  border-radius: 16px;
+  border: 1px solid var(--glass-border);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.table thead tr {
+  border-bottom: 1px solid var(--color-border);
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.table th {
+  padding: 1rem 1.25rem;
+  text-align: left;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.row {
+  border-bottom: 1px solid var(--color-border);
+  transition: background 0.15s ease;
+}
+
+.row:hover { background: rgba(255, 255, 255, 0.03); }
+
+.table td {
+  padding: 1rem 1.25rem;
+  vertical-align: middle;
+}
+
+.tdId {
+  font-family: monospace;
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.userEmail {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.userName {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+.adminBadge {
+  display: inline-block;
+  background: rgba(242, 93, 7, 0.15);
+  color: var(--color-primary);
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  border: 1px solid rgba(242, 93, 7, 0.3);
+  margin-top: 0.2rem;
+  width: max-content;
+}
+
+.tdDate, .tdCount {
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+}
+
+.tdActions {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.actionBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.4rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border: 1px solid var(--color-border);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  background: rgba(255,255,255,0.05);
+  color: var(--color-text-main);
+  white-space: nowrap;
+}
+
+.editBtn:hover {
+  background: rgba(242, 212, 7, 0.1);
+  border-color: rgba(242, 212, 7, 0.3);
+  color: #F2D407;
+}
+
+.deleteBtn {
+  padding: 0.4rem 0.5rem;
+}
+
+.deleteBtn:hover {
+  background: rgba(232, 63, 91, 0.1);
+  border-color: rgba(232, 63, 91, 0.3);
+  color: #E83F5B;
+}
+
+/* Modais */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: fadeIn 0.15s ease;
+}
+
+.modal {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 400px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  animation: scaleIn 0.2s ease;
+}
+
+.modalIcon { font-size: 2.5rem; text-align: center; }
+.modalTitle { font-size: 1.3rem; font-weight: 700; text-align: center; margin-bottom: 0.5rem; }
+.modalText { color: var(--color-text-muted); font-size: 0.9rem; text-align: center; }
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.formGroup label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+.input {
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  color: white;
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  outline: none;
+}
+.input:focus { border-color: var(--color-primary); }
+
+.modalActions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.cancelBtn, .saveBtn, .deleteConfirmBtn {
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.cancelBtn {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-main);
+}
+.cancelBtn:hover { background: rgba(255,255,255,0.1); }
+
+.saveBtn {
+  background: var(--color-primary);
+  color: white;
+}
+.saveBtn:hover { background: var(--color-primary-hover); }
+
+.deleteConfirmBtn {
+  background: #E83F5B;
+  color: white;
+}
+.deleteConfirmBtn:hover { background: #c8334a; }
+
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+@keyframes scaleIn { from { opacity: 0; transform: scale(0.9); } to { opacity: 1; transform: scale(1); } }

@@ -1,0 +1,188 @@
+.container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  min-height: calc(100vh - 64px);
+}
+
+.formCard {
+  width: 100%;
+  max-width: 480px;
+  padding: 3rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  my-block: 2rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.subtitle {
+  color: var(--color-text-muted);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.inputGroup label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-text-muted);
+}
+
+.input {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-main);
+  padding: 0.875rem 1rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  outline: none;
+  width: 100%;
+}
+
+.input:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 2px rgba(242, 93, 7, 0.2);
+}
+
+.inputValid {
+  border-color: #04D361 !important;
+  box-shadow: 0 0 0 2px rgba(4, 211, 97, 0.15) !important;
+}
+
+.inputError {
+  border-color: var(--color-error) !important;
+  box-shadow: 0 0 0 2px rgba(232, 63, 91, 0.15) !important;
+}
+
+.fieldError {
+  font-size: 0.8rem;
+  color: var(--color-error);
+  margin-top: 0.1rem;
+}
+
+.fieldSuccess {
+  font-size: 0.8rem;
+  color: #04D361;
+  margin-top: 0.1rem;
+}
+
+/* Password Strength Bar */
+.strengthContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+.strengthBar {
+  display: flex;
+  gap: 4px;
+  flex: 1;
+}
+
+.strengthSegment {
+  height: 4px;
+  flex: 1;
+  border-radius: 999px;
+  transition: background-color 0.3s ease;
+}
+
+.strengthLabel {
+  font-size: 0.78rem;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+  min-width: 80px;
+  text-align: right;
+}
+
+/* Password Hints Checklist */
+.passwordHints {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-top: 0.5rem;
+  padding: 0.75rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 6px;
+  border: 1px solid var(--color-border);
+}
+
+.hintOk {
+  font-size: 0.8rem;
+  color: #04D361;
+  transition: color 0.2s;
+}
+
+.hintMissing {
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+}
+
+/* Submit Button */
+.submitBtn {
+  margin-top: 0.75rem;
+  width: 100%;
+  padding: 0.875rem;
+  font-size: 1rem;
+}
+
+.submitBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Error/Alert Box */
+.errorAlert {
+  background-color: rgba(232, 63, 91, 0.1);
+  color: var(--color-error);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid rgba(232, 63, 91, 0.2);
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Footer Link */
+.footerText {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
+.link {
+  color: var(--color-primary);
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: var(--color-primary-hover);
+  text-decoration: underline;
+}

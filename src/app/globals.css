@@ -1,0 +1,150 @@
+:root {
+  --color-bg: #121214;
+  --color-surface: #202024;
+  --color-surface-hover: #29292e;
+  --color-primary: #F25D07;
+  --color-primary-hover: #F2935C;
+  --color-text-main: #FFFFFF;
+  --color-text-muted: #A8A8B3;
+  --color-border: #323238;
+  --color-error: #E83F5B;
+  --color-success: #04D361;
+
+  --glass-bg: rgba(32, 32, 36, 0.6);
+  --glass-border: rgba(255, 255, 255, 0.1);
+
+  --font-sans: 'Inter', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text-main);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  font-family: inherit;
+}
+
+/* Glassmorphism Utilities */
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+}
+
+/* Global Button Styles */
+.btn-primary {
+  background-color: var(--color-primary);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(242, 93, 7, 0.3);
+}
+
+/* Layout Elements */
+.main-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-radius: 0;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+}
+
+.logo span {
+  color: var(--color-primary);
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  font-weight: 500;
+  color: var(--color-text-muted);
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: var(--color-text-main);
+}
+
+.welcome-text {
+  color: var(--color-text-muted);
+  font-size: 0.95rem;
+  margin-right: 0.5rem;
+}
+
+.welcome-text strong {
+  color: var(--color-text-main);
+  font-weight: 700;
+}
+
+.logout-btn {
+  background: transparent;
+  color: var(--color-error);
+  border: 1px solid var(--color-error);
+  padding: 6px 16px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.logout-btn:hover {
+  background: rgba(232, 63, 91, 0.1);
+}
+
+.app-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
